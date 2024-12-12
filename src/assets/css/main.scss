@@ -1,0 +1,36 @@
+@use './base.scss';
+
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 400;
+  src: url('@/assets/fonts/PTSans-Regular.ttf');
+}
+
+body {
+  margin: unset;
+}
+
+#app {
+  padding: 0 100px;
+
+  @media (max-width: 768px) {
+    padding: 0 16px;
+  }
+}
+
+* {
+  font-family: "PT Sans", sans-serif;
+  color: var(--color-font-main);
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.lines-cutter {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: var(--lines, 1);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  word-break: break-word;
+}
