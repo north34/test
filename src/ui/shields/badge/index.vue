@@ -6,7 +6,7 @@
 
 <style scoped lang="scss">
 .badge {
-    background: var(--color-white);
+    background: $color-white;
     padding: 6px 8px;
     width: fit-content;
     border: 1px solid #F2F2F2;

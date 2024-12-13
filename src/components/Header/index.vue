@@ -35,6 +35,4 @@ export default {
     </header>
 </template>
 
-<style scoped lang="scss">
-@use 'style';
-</style>
+<style scoped lang="scss" src="./style.scss" />

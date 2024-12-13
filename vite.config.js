@@ -16,4 +16,13 @@ export default defineConfig({
     },
   },
   base: '/test/',
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `
+          @use '@/assets/css/base.scss' as *;
+        `,
+      },
+    },
+  },
 })

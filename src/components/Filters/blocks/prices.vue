@@ -1,24 +1,23 @@
-<script>
+<script setup>
 import DividerIcon from '@/ui/icons/Divider.vue';
 import UIPriceInput from '@/components/Filters/ui/PriceInput.vue';
 
-export default {
-    components: { UIPriceInput, DividerIcon }
-};
+const from = defineModel('from');
+const to = defineModel('to');
 </script>
 
 <template>
     <div class="price">
         <UIPriceInput
             label="от"
-            value="5 500 ₽"
+            v-model="from"
         />
 
         <DividerIcon />
 
         <UIPriceInput
             label="до"
-            value="15 500 ₽"
+            v-model="to"
         />
     </div>
 </template>

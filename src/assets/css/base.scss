@@ -1,15 +1,13 @@
-:root {
-  --color-font-main: #333333;
-  --color-font-cover: #125BAE;
-  --color-font-history: #5A0488;
-  --color-font-second: #AAAAAA;
-  --color-font-bg: #E2EFFF;
-  --color-brand: #7397F5;
-  --color-border: #D5D5D5;
-  --scroll-bar: #F2F2F2;
-  --color-icons: #CBCBCB;
-  --color-white: white;
+$breakpoint-desktop: 1144px;
+$breakpoint-mobile: 768px;
 
-  --breakpoint-desktop: 1144px;
-  --breakpoint-mobile: 768px;
-}
+$color-font-main: #333333;
+$color-font-cover: #125BAE;
+$color-font-history: #5A0488;
+$color-font-second: #AAAAAA;
+$color-font-bg: #E2EFFF;
+$color-brand: #7397F5;
+$color-border: #D5D5D5;
+$scroll-bar: #F2F2F2;
+$color-icons: #CBCBCB;
+$color-white: white;

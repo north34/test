@@ -60,7 +60,7 @@ header {
     cursor: pointer;
 
     &:hover {
-      color: var(--color-brand);
+      color: $color-brand;
     }
   }
 }
@@ -69,8 +69,8 @@ header {
   display: none;
 }
 
-@media (max-width: 1144px) {
-  .logo, .menu {
+@media (max-width: $breakpoint-desktop) {
+  .menu {
     display: none;
   }
 
@@ -79,12 +79,12 @@ header {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: $breakpoint-mobile) {
   header {
     margin-bottom: 12px;
   }
 
-  .catalog {
+  .logo, .menu, .catalog {
     display: none;
   }
 

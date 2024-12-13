@@ -43,7 +43,7 @@ main {
         grid-template-columns: repeat(auto-fit, minmax(min(100%/2, max(200px, 100%/5)), 1fr));
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: $breakpoint-mobile) {
         margin-bottom: 16px;
 
         .content {
@@ -51,7 +51,7 @@ main {
         }
     }
 
-    @media (max-width: 1144px) {
+    @media (max-width: $breakpoint-desktop) {
         gap: unset;
         flex-direction: column;
     }

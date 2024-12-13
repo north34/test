@@ -42,6 +42,4 @@ defineProps({
     </article>
 </template>
 
-<style scoped lang="scss">
-@use './style.scss';
-</style>
+<style scoped lang="scss" src="./style.scss" />

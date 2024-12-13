@@ -17,7 +17,7 @@ export default {
 <style scoped lang="scss">
 .title {
     .brand-name {
-        color: var(--color-font-second);
+        color: $color-font-second;
         margin-bottom: 8px;
         line-height: 16px;
     }
@@ -28,7 +28,7 @@ export default {
         transition: color .2s;
 
         &:hover {
-            color: var(--color-font-cover);
+            color: $color-font-cover;
         }
     }
 }
