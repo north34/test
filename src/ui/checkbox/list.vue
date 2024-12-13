@@ -1,18 +1,18 @@
-<script>
+<script setup>
 import UICheckbox from '@/ui/checkbox/index.vue';
 import SearchInput from '@/components/Filters/ui/SearchInput.vue';
 
-export default {
-    props: {
-        items: { type: Array, required: true },
-    },
-    components: { SearchInput, UICheckbox },
-};
+const items = defineModel('items', { type: Array, required: true });
+const searchInput = defineModel('search');
 </script>
 
 <template>
     <div>
-        <SearchInput v-if="items?.length > 6" />
+        <SearchInput
+            class="search-input"
+            v-if="items?.length > 6"
+            v-model="searchInput"
+        />
 
         <div class="list">
             <UICheckbox
@@ -20,6 +20,7 @@ export default {
                 :key="idx"
                 :label="item.label"
                 :counter="item.counter"
+                v-model="item.checked"
             />
         </div>
     </div>

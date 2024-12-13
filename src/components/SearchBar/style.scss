@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   flex: 1;
-  outline: 1px solid var(--color-font-second);
+  outline: 1px solid $color-font-second;
   border-radius: 10px;
   padding-left: 16px;
   padding-right: 4px;
@@ -21,7 +21,7 @@
     flex-shrink: 0;
   }
 
-  input {
+  :deep(input) {
     width: 100%;
     border: unset;
     outline: unset;
@@ -50,31 +50,31 @@
     line-height: 14px;
 
     &:hover {
-      background: var(--color-brand);
+      background: $color-brand;
     }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: $breakpoint-mobile) {
     outline: unset;
     border-radius: unset;
     padding: unset;
-    border-bottom: 1px solid var(--color-border);
+    border-bottom: 1px solid $color-border;
     transition: border-bottom-color .2s;
 
     &:focus-within {
-      border-color: var(--color-brand);
+      border-color: $color-brand;
     }
 
     .search-icon {
       display: none;
     }
 
-    input {
+    :deep(input) {
       margin-left: unset;
     }
 
     button {
-      background: var(--color-brand);
+      background: $color-brand;
       font-weight: 400;
       border-radius: 5px;
     }

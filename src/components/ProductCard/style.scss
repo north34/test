@@ -55,8 +55,8 @@
       width: 100%;
 
       &:not(:hover) {
-        border-color: var(--color-font-second);
-        color: var(--color-font-second);
+        border-color: $color-font-second;
+        color: $color-font-second;
       }
     }
   }

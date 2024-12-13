@@ -10,7 +10,7 @@ export default {
     <div class="filter">
         <div class="header">
             <div class="title" v-text="title" />
-            <button>Очистить</button>
+            <button @click="$emit('clear')">Очистить</button>
         </div>
 
         <slot />
@@ -36,14 +36,14 @@ export default {
             line-height: 12px;
             text-decoration: underline;
             cursor: pointer;
-            color: var(--color-font-second);
+            color: $color-font-second;
             transition: color .2s;
 
             background: none;
             border: none;
 
             &:hover {
-                color: var(--color-font-main);
+                color: $color-font-main;
             }
         }
     }

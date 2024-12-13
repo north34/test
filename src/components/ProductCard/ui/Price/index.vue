@@ -1,7 +1,7 @@
 <script>
 export default {
     props: {
-        price: { type: String, required: true },
+        price: { type: String, default: '' },
         fullPrice: { type: String, default: '' },
     },
 };
@@ -26,7 +26,7 @@ export default {
     line-height: 14px;
 
     .full-price {
-        color: var(--color-font-second);
+        color: $color-font-second;
         font-size: 12px;
         text-decoration: line-through;
         margin-left: 8px;

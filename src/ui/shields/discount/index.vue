@@ -7,8 +7,8 @@
 <style scoped lang="scss">
 .discount {
     width: fit-content;
-    background: var(--color-brand);
-    color: var(--color-white);
+    background: $color-brand;
+    color: $color-white;
     font-size: 14px;
     line-height: 14px;
     font-weight: 700;

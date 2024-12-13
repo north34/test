@@ -7,9 +7,9 @@
 <style scoped lang="scss">
 button {
     width: fit-content;
-    background: var(--color-white);
-    color: var(--color-brand);
-    border: 1px solid var(--color-brand);
+    background: $color-white;
+    color: $color-brand;
+    border: 1px solid $color-brand;
     padding: 12px 16px;
     border-radius: 4px;
     transition: all .2s ease-out;
@@ -17,8 +17,8 @@ button {
     font-weight: 700;
 
     &:hover {
-        background: var(--color-brand);
-        color: var(--color-white);
+        background: $color-brand;
+        color: $color-white;
     }
 }
 </style>

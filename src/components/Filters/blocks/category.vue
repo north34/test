@@ -39,14 +39,14 @@ defineProps({
         border-radius: 5px;
 
         &:hover {
-            background: var(--color-font-bg);
+            background: $color-font-bg;
         }
     }
 
     .counter {
         margin-left: auto;
         margin-right: 8px;
-        color: var(--color-font-second);
+        color: $color-font-second;
         font-size: 12px;
     }
 }

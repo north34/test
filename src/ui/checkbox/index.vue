@@ -1,15 +1,15 @@
-<script>
-export default {
-    props: {
-        label: { type: String, default: '' },
-        counter: { type: [ String, Number ], default: '' },
-    },
-};
+<script setup>
+defineProps({
+    label: { type: String, default: '' },
+    counter: { type: [ String, Number ], default: '' },
+});
+
+const checked = defineModel();
 </script>
 
 <template>
     <label>
-        <input type="checkbox" />
+        <input type="checkbox" :checked />
         <span class="text" v-if="label" v-text="label" />
         <span class="counter" v-if="counter" v-text="counter" />
     </label>
@@ -26,14 +26,14 @@ label {
         height: 20px;
 
         appearance: none;
-        border: 1px solid var(--color-border);
+        border: 1px solid $color-border;
         border-radius: 3px;
 
         transition: border .2s, background-color .2s;
 
         &:checked {
-            border-color: var(--color-brand);
-            background-color: var(--color-brand);
+            border-color: $color-brand;
+            background-color: $color-brand;
 
             &::after {
                 content: '';
@@ -47,7 +47,7 @@ label {
 
     &:hover {
         input[type=checkbox] {
-            border-color: var(--color-brand);
+            border-color: $color-brand;
         }
     }
 
@@ -58,7 +58,7 @@ label {
     .counter {
         margin-left: auto;
         margin-right: 8px;
-        color: var(--color-font-second);
+        color: $color-font-second;
         font-size: 12px;
     }
 }
