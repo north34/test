@@ -35,22 +35,7 @@ const searchInput = defineModel('search');
     overflow-y: scroll;
     scrollbar-gutter: stable;
 
-    &::-webkit-scrollbar {
-        width: 14px;
-    }
-
-    &::-webkit-scrollbar-track {
-        background: transparent;
-        border-radius: 100px;
-        cursor: pointer;
-    }
-
-    &::-webkit-scrollbar-thumb {
-        border-radius: 100px;
-        background-clip: content-box;
-        border: 5px solid transparent;
-        background-color: #CBCBCB;
-    }
+    @include scrollbar;
 }
 
 .search-input {
