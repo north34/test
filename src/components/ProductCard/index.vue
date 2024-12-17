@@ -4,7 +4,6 @@ import FireIcon from '@/ui/icons/Fire.vue';
 import UIBadgeShield from '@/ui/shields/badge/index.vue';
 import UIDiscountShield from '@/ui/shields/discount/index.vue';
 import UIButton from '@/ui/button/index.vue';
-import UICardTitle from './ui/Title/index.vue';
 import UICardPrice from './ui/Price/index.vue';
 
 defineProps({
@@ -28,10 +27,8 @@ defineProps({
             />
         </div>
 
-        <UICardTitle
-            :name="item.name"
-            :brand="item.brand"
-        />
+        <div class="brand" v-text="item.brand" />
+        <div class="title" v-text="item.name" />
 
         <UICardPrice
             :price="item.price"

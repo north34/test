@@ -1,7 +1,7 @@
 <script setup>
 import SearchIcon from '@/ui/icons/Search.vue';
 import CloseCircleIcon from '@/ui/icons/CloseCircle.vue';
-import UIInput from '@/ui/input/index.vue';
+import UIInput from './index.vue';
 
 const searchText = defineModel();
 </script>

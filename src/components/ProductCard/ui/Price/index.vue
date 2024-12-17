@@ -8,7 +8,7 @@ export default {
 </script>
 
 <template>
-    <div class="price">
+    <div class="price" v-if="price">
         {{ price }}
 
         <span

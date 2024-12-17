@@ -1,6 +1,6 @@
 <script setup>
 import UICheckbox from '@/ui/checkbox/index.vue';
-import SearchInput from '@/components/Filters/ui/SearchInput.vue';
+import UISearchInput from '@/ui/input/search.vue';
 
 const items = defineModel('items', { type: Array, required: true });
 const searchInput = defineModel('search');
@@ -8,7 +8,7 @@ const searchInput = defineModel('search');
 
 <template>
     <div>
-        <SearchInput
+        <UISearchInput
             class="search-input"
             v-if="items?.length > 6"
             v-model="searchInput"
@@ -33,9 +33,8 @@ const searchInput = defineModel('search');
     gap: 12px;
     max-height: 180px;
     overflow-y: scroll;
-    scrollbar-gutter: stable;
 
-    @include scrollbar;
+    @include custom-scrollbar();
 }
 
 .search-input {

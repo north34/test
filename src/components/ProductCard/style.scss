@@ -32,6 +32,26 @@
     }
   }
 
+  .brand {
+    @include lines-cutter();
+
+    color: $color-font-second;
+    margin-bottom: -8px;
+    line-height: 16px;
+  }
+
+  .title {
+    @include lines-cutter(3);
+
+    cursor: pointer;
+    line-height: 16px;
+    transition: color .2s;
+
+    &:hover {
+      color: $color-font-cover;
+    }
+  }
+
   button {
     margin-top: auto;
   }

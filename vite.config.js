@@ -21,7 +21,7 @@ export default defineConfig({
       scss: {
         additionalData: `
           @use '@/assets/css/base.scss' as *;
-          @use '@/assets/css/scrollbar.scss' as *;
+          @use '@/assets/css/features.scss' as *;
         `,
       },
     },
